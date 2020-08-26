@@ -25,3 +25,13 @@ function Stack () {
     return items
   }
 }
+
+const stack = new Stack()
+const elements = [1, 2, 3, 4, 5]
+
+elements.forEach(element => {
+  stack.push(element)
+})
+
+console.log(stack.get().toString())
+console.log(stack.size())
